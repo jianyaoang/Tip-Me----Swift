@@ -39,6 +39,8 @@ class ViewController: UIViewController {
         
         self.totalBillAmount = billAmountDoubleValue + tenPercentOfBillAmount
         
+        self.bill.theTotalBillAmount = self.totalBillAmount
+        
         println("this is self.totalBillAmount = \(self.totalBillAmount)")
     }
     
@@ -59,5 +61,17 @@ class ViewController: UIViewController {
         self.view.endEditing(true)
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!)
+    {
+        if segue.identifier == "BillDetails"
+        {
+            var billDetailsVC: BillDetailsVC = BillDetailsVC()
+            billDetailsVC = segue!.destinationViewController as BillDetailsVC
+            billDetailsVC.bill = self.bill
+//            billDetailsVC.totalBillDetail.text = "\(self.bill.theTotalBillAmount)"
+//            billDetailsVC.
+            
+        }
+    }
 }
 

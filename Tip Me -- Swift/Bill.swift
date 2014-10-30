@@ -10,7 +10,6 @@ import Foundation
 
 class Bill: NSObject
 {
-    var totalBillAmount: NSString?
     var theTotalBillAmount: Double?
     var numberToBePaidPerPerson: Double?
 }
