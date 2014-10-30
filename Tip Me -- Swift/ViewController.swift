@@ -10,14 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var totalBillTextField: UITextField!
+    @IBOutlet var numberOfPeopleTextField: UITextField!
+    @IBOutlet var tenPercent: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
     }
 
 
